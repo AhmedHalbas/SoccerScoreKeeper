@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Team A"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/teamA_goal_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="0"
+                    android:gravity="center_horizontal"
+                    android:textColor="#00bc43"
+                    android:textSize="45sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+
+
+                    <TextView
+                        android:id="@+id/teamA_foul_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:gravity="center_horizontal"
+                        android:textColor="#de0000"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:id="@+id/teamA_offside_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="#fde400"
+                        android:textSize="35sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/teamA_goal_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="GOAAAL"
+                    android:drawableLeft="@drawable/goal"
+
+                    />
+
+
+                <Button
+                    android:id="@+id/teamA_foul_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="FOUL"
+                    android:drawableLeft="@drawable/foul"/>
+
+
+                <Button
+                    android:id="@+id/teamA_offside_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="OFFSIDE"
+                    android:drawableLeft="@drawable/offside"/>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="315dp"
+                android:layout_margin="10dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:text="Team B"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/teamB_goal_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:text="0"
+                    android:gravity="center_horizontal"
+                    android:textColor="#00bc43"
+                    android:textSize="45sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+
+
+
+                    <TextView
+                        android:id="@+id/teamB_foul_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="#de0000"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:id="@+id/teamB_offside_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="#fde400"
+                        android:textSize="35sp" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/teamB_goal_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="GOAAAL"
+                    android:drawableLeft="@drawable/goal"/>
+
+
+                <Button
+                    android:id="@+id/teamB_foul_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="FOUL"
+                    android:drawableLeft="@drawable/foul"/>
+
+
+                <Button
+                    android:id="@+id/teamB_offside_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="OFFSIDE"
+                    android:drawableLeft="@drawable/offside"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reset_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="End Match" />
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
